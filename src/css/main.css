@@ -1,0 +1,124 @@
+body {
+    /*font-family: 'Roboto', normal;*/
+    /*font-family: 'Spline Sans Mono', monospace;*/
+    font-family: 'Roboto', sans-serif;
+}
+
+#main-container {
+    width: 1440px;
+    display: flex;
+    /*flex-direction: row;*/
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding-top: 30px;
+    margin: 0 auto;
+}
+
+#text-content {
+    width: 380px;
+}
+
+#text-content > h1 {
+    font-weight: bolder;
+    font-size: 42px;
+    font-family: 'Roboto', normal;
+    line-height: 50px;
+}
+
+#text-content > p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 24px;
+}
+
+#image, #text-content {
+    margin: 47.5px;
+}
+
+#text-content > button {
+    font-family: 'Roboto', normal;
+    width: 128px;
+    height: 48px;
+    background-color: #E4C1AE;
+    border-radius: 32px;
+    color: white;
+    font-size: 16px;
+    line-height: 16px;
+    border: none;
+}
+
+#text-content > button > a {
+    text-decoration: none;
+    color: white;
+}
+
+#shadow {
+    background: rgba(102, 102, 102, 0.5);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: none;
+}
+
+#window {
+    /*width: 64%;*/
+    /*height: 22%;*/
+    /*text-align: center;*/
+    display: flex;
+    width: 920px;
+    height: 210px;
+    padding-left: 95px;
+    /*border: 3px solid #0000cc;*/
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    background: #fff;
+}
+
+#shadow:target {
+    display: block;
+}
+
+.close-window {
+    display: inline-block;
+    color: #0000cc;
+    padding: 0 12px;
+    margin: 10px;
+    text-decoration: none;
+}
+
+#window-text {
+    /*display: table-cell;*/
+    vertical-align: center;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+#window-text > h1 {
+    height: 50px;
+    font-size: 42px;
+    font-weight: 700;
+    line-height: 120%;
+}
+
+#window-text > p {
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 150%;
+}
+
+.close-button {
+    margin-left: auto;
+    margin-top: 46px;
+    margin-right: 46px;
+    color: black;
+    text-decoration: none;
+    height: 12px;
+    width: 12px;
+}
